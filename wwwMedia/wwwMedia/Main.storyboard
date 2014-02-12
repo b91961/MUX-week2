@@ -147,15 +147,15 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
                                     <navigationItem title="Details" id="jp5-DZ-WyS">
-                                        <barButtonItem key="leftBarButtonItem" id="hk5-bq-NQh">
-                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TPu-xi-kPZ">
-                                                <rect key="frame" x="16" y="7" width="40" height="30"/>
+                                        <barButtonItem key="leftBarButtonItem" id="Aih-lV-Lni">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="29F-UX-WQH">
+                                                <rect key="frame" x="16" y="7" width="34" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" title="Close">
+                                                <state key="normal" image="back">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="iOW-0Z-BCe" kind="unwind" unwindAction="done:" id="3IE-Lr-ule"/>
+                                                    <segue destination="iOW-0Z-BCe" kind="unwind" unwindAction="done:" id="qCq-Qc-p77"/>
                                                 </connections>
                                             </button>
                                         </barButtonItem>
@@ -502,11 +502,11 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="17" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="rs3-hJ-Tt2">
                                 <rect key="frame" x="20" y="213" width="280" height="251"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">Social Media is everywhere. There is no better way engage your target audience at an instant than with Social Media.
+                                <string key="text">Social Media is everywhere. There is no better way engage your target audience at an instant than with Social Media.
 
 We provide a variety of social media services to meet the needs of every type of business. We learn your business and learn what your customers want. We don’t just meet a quota for likes, or followers, or number of posts. Our marketing and design solutions will fit the needs of your company to increase your business.
 
-Contact us now to discuss a Social Media Marketing campaign customized for you!</mutableString>
+Contact us now to discuss a Social Media Marketing campaign customized for you!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
