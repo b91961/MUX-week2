@@ -178,19 +178,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // are we in delete mode?
-    if (editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        // remove the data from the data array.
-        [socialArray removeObjectAtIndex:indexPath.row];
-        
-        // remove the line item from the tableView.
-        [tableView deleteRowsAtIndexPaths: [NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    }
-}
-
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     //set number of rows to the amount of objects in the array.

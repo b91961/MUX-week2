@@ -31,6 +31,17 @@
 	// Do any additional setup after loading the view.
 }
 
+
+- (void) viewDidDisappear:(BOOL)animated {
+    // Clear all Cookies and cache
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
+    NSHTTPCookie *cookie;
+    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    for (cookie in [storage cookies]) {
+        [storage deleteCookie:cookie];
+    }
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
