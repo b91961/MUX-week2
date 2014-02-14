@@ -32,14 +32,16 @@
 }
 
 
-- (void) viewDidDisappear:(BOOL)animated {
+- (void) viewDidDisappear:(BOOL)animated
+{
     // Clear all Cookies and cache
-    [[NSURLCache sharedURLCache] removeAllCachedResponses];
-    NSHTTPCookie *cookie;
-    NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
-    for (cookie in [storage cookies]) {
-        [storage deleteCookie:cookie];
-    }
+    //[[NSURLCache sharedURLCache] removeAllCachedResponses];
+    //NSHTTPCookie *cookie;
+    //NSHTTPCookieStorage *storage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    //for (cookie in [storage cookies])
+    //{
+    //    [storage deleteCookie:cookie];
+    //}
 }
 
 - (void)didReceiveMemoryWarning

@@ -259,7 +259,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cx7-R0-dOz" kind="modal" id="wOt-Wj-B5q"/>
+                                    <segue destination="cx7-R0-dOz" kind="push" identifier="compose" id="wOt-Wj-B5q"/>
                                 </connections>
                             </button>
                         </barButtonItem>
@@ -312,9 +312,6 @@
                                                 <state key="normal" image="back">
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
-                                                <connections>
-                                                    <action selector="onBack:" destination="cx7-R0-dOz" eventType="touchUpInside" id="Ifm-Dn-tYC"/>
-                                                </connections>
                                             </button>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" id="aoZ-Cq-mAY">
@@ -413,19 +410,18 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="onSave:" destination="cx7-R0-dOz" eventType="touchUpInside" id="gvQ-4w-xrG"/>
-                                    <segue destination="OkS-63-M50" kind="unwind" unwindAction="done:" id="FwZ-Mx-3As"/>
+                                    <action selector="onSave:" destination="cx7-R0-dOz" eventType="touchUpInside" id="qqC-NT-9Ze"/>
+                                    <segue destination="OkS-63-M50" kind="unwind" unwindAction="done:" id="Le0-xZ-4Es"/>
                                 </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="backButton" destination="RoL-no-5KV" id="G1M-ew-Gtp"/>
                         <outlet property="datePicker" destination="atW-T1-0BE" id="6LN-dG-fgB"/>
                         <outlet property="ideaField" destination="PZL-UP-bEQ" id="nDi-eT-udV"/>
                         <outlet property="keyboardButton" destination="3Wj-cT-SwY" id="PmU-Yu-qkf"/>
                         <outlet property="nameField" destination="uQg-xK-k4f" id="2hC-gu-l4Y"/>
-                        <outlet property="saveButton" destination="RQy-4u-2Ye" id="pY8-jb-gXO"/>
+                        <outlet property="saveButton" destination="RQy-4u-2Ye" id="mfw-Cw-QIO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pgg-ya-Ucp" userLabel="First Responder" sceneMemberID="firstResponder"/>
